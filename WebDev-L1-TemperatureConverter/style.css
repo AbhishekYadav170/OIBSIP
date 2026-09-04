@@ -1,0 +1,281 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef4ff, #f8fbff);
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+
+/* =========================
+   CONVERTER CARD
+========================= */
+
+.converter-card {
+    width: 100%;
+    max-width: 700px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #172554;
+}
+
+.header p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.converter-form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================
+   CONVERT BUTTON
+========================= */
+
+#convertBtn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#convertBtn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+#convertBtn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+.error-message {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 12px;
+    text-align: center;
+    min-height: 18px;
+}
+
+
+/* =========================
+   RESULTS
+========================= */
+
+.results {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 25px;
+}
+
+.results h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #172554;
+}
+
+
+/* =========================
+   RESULT GRID
+========================= */
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.result-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #f8fafc;
+    transition: 0.3s;
+}
+
+.result-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.result-icon {
+    min-width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-weight: 700;
+}
+
+.result-box p {
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.result-box h3 {
+    color: #0f172a;
+    font-size: 18px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.footer p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 650px) {
+
+    .converter-card {
+        padding: 25px 20px;
+    }
+
+    .header h1 {
+        font-size: 27px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .result-box {
+        padding: 16px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .container {
+        padding: 15px 10px;
+    }
+
+    .converter-card {
+        padding: 22px 15px;
+        border-radius: 15px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+}
