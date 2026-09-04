@@ -37,9 +37,7 @@ textarea {
 }
 
 
-/* =========================
-   NAVBAR
-========================= */
+/* = NAVBAR =*/
 
 .navbar {
     position: sticky;
@@ -795,9 +793,7 @@ textarea {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* = MOBILE = */
 
 @media (max-width: 700px) {
 
@@ -913,9 +909,7 @@ textarea {
 }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
+/* = SMALL MOBILE = */
 
 @media (max-width: 450px) {
 
