@@ -125,12 +125,11 @@ temperatureInput.addEventListener("keydown", function (event) {
 });
 
 
-// =========================
 // CLEAR ERROR WHILE TYPING
-// =========================
 
 temperatureInput.addEventListener("input", function () {
 
     errorMessage.textContent = "";
 
 });
+
