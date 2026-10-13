@@ -581,7 +581,7 @@ section {
 .info-box span {
     color: #64748b;
 
-    font-size: 13px;
+    font-size: 14px;
 
     font-weight: 600;
 }
@@ -626,7 +626,7 @@ section {
 
     border-radius: 13px;
 
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .skill-card:hover {
