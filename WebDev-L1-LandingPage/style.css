@@ -899,7 +899,7 @@ textarea {
 
     .footer-container {
         grid-template-columns: 1fr 1fr;
-        gap: 35px 20px;
+        gap: 36px 20px;
     }
 
     .footer-bottom {
