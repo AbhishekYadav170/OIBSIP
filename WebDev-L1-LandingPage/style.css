@@ -384,13 +384,13 @@ textarea {
     align-items: center;
     justify-content: center;
     margin-bottom: 22px;
-    border-radius: 12px;
+    border-radius: 14px;
     background: #e9e7ff;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .about-card h3 {
-    font-size: 20px;
+    font-size: 21px;
     margin-bottom: 10px;
 }
 
